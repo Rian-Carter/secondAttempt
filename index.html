@@ -4,35 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@yeahrightokay</title>
-
-
   <link rel="icon" type="image/jpg" href="img/favicon-16x16.png">
-
-
-
   <!-- font awesome cdn link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
-  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z"/></svg> -->
-
-
-
-
-
   <!-- css file link -->
   <link rel="stylesheet" href="css/styles.css">
-
-
+  <script src="js/script.js" defer></script>
+  <title>@yeahrightokay</title>
 </head>
+
+
+
+
+
 <body>
-
-
-
-
-
-
   <!-- header section starts -->
   <header class="header">
     <a href="https://www.instagram.com/yeahrightokay/" class="logo">
@@ -96,7 +81,6 @@
       <a href="#" class="btn">checkout now</a>
     </div>
   </header>
-  
   <!-- header section ends -->
 
 
@@ -192,25 +176,33 @@
 
 
 
+
+
+
+
   <!-- start image carousel -->
   <section aria-label="Newest Photos">
-    <div class="carousel">
+    <div class="carousel" data-carousel>
       <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-      <button class="carousel-button next" data-carousel-butto="next">&#8658;</button>
-    <ul>
-      <li class="slide" data-active>
-        <img src="https://images.pexels.com/photos/13623493/pexels-photo-13623493.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="lady with candle">
-      </li>
-      <li class="slide">
-        <img src="https://images.pexels.com/photos/13830246/pexels-photo-13830246.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="green door">
-      </li>
-      <li class="slide">
-        <img src="https://images.pexels.com/photos/13034288/pexels-photo-13034288.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="hand on foggy window">
-      </li>
-    </ul>
+      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+      <ul data-slides>
+        <li class="slide" data-active>
+          <img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image #1">
+        </li>
+        <li class="slide">
+          <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #2">
+        </li>
+        <li class="slide">
+          <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3">
+        </li>
+      </ul>
     </div>
   </section>
   <!-- end image carousel -->
+
+
+
+
 
 
 
@@ -358,6 +350,5 @@
 
 
 
-  <script src="js/script.js" defer></script>
 </body>
 </html>
