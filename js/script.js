@@ -27,3 +27,16 @@ window.onscroll = () =>{
   searchForm.classList.remove('active');
   cartItem.classList.remove('active');
 }
+
+
+
+
+
+
+const buttons = document.querySelector("[data-carousel-button]")
+
+buttons.beforeEach(button => {
+  button.addEventListener("click", () => {
+    const offset = button.dataset.carouselButton === "next" ? 1 : -1
+  })
+})
