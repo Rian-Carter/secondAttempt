@@ -30,20 +30,20 @@
       <a href="#gallery">gallery</a>
       <a href="#events">events</a>
       <a href="#contact">contact</a>
-      <a href="#social">social</a>
+      <a href="#footer">social</a>
     </nav>
 
 
     <div class="icons">
-      <div class="fas fa-search" id="search-btn"></div>
+      <!-- <div class="fas fa-search" id="search-btn"></div> -->
       <div class="fas fa-shopping-cart" id="cart-btn"></div>
       <div class="fas fa-bars" id="menu-btn"></div>
     </div>
 
-    <div class="search-form">
+    <!-- <div class="search-form">
       <input type="search" id="search-box" placeholder="search here...">
       <label for="search-box" class="fas fa-search"></label>
-    </div>
+    </div> -->
 
     <div class="cart-items-container">
       <div class="cart-item">
@@ -102,7 +102,7 @@
 
 
 
-
+  <div class="spacer"></div>
 
 
   <!-- about section starts -->
@@ -117,7 +117,7 @@
         <h3>Local PDX <span>artist</span></h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quod! Tempora dolores nostrum magnam minima fuga adipisci voluptates, ipsum accusamus culpa illo quaerat eos. Blanditiis fugit voluptatem cum non eum?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugiat illo impedit earum? Nobis, molestiae quas velit quisquam vel amet.</p>
-        <a href="#" class="btn">learn more</a>
+        <!-- <a href="#" class="btn">learn more</a> -->
       </div>
     </div>
   </section>
@@ -125,58 +125,13 @@
 
 
 
-
+  <div class="spacer"></div>
 
 
 
   <!-- start gallery section -->
   <section class="gallery" id="gallery">
     <h1 class="heading">my <span>work</span></h1>
-    <!-- <div class="box-container">
-      <div class="box">
-        <img src="img/img-1.png" alt="">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, necessitatibus!</h3> -->
-        <!-- <div class="price">$15.99 <span>20.99</span></div>
-        <a href="#" class="btn">add to cart</a> -->
-      <!-- </div>
-      <div class="box">
-        <img src="img/img-2.png" alt="">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, necessitatibus!</h3> -->
-        <!-- <div class="price">$15.99 <span>20.99</span></div>
-        <a href="#" class="btn">add to cart</a> -->
-      <!-- </div> -->
-      <!-- <div class="box">
-        <img src="img/img-3.png" alt="">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, necessitatibus!</h3> -->
-        <!-- <div class="price">$15.99 <span>20.99</span></div>
-        <a href="#" class="btn">add to cart</a> -->
-      <!-- </div> -->
-      <!-- <div class="box">
-        <img src="img/img-4.png" alt="">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, necessitatibus!</h3> -->
-        <!-- <div class="price">$15.99 <span>20.99</span></div>
-        <a href="#" class="btn">add to cart</a> -->
-      <!-- </div>
-      <div class="box">
-        <img src="img/img-5.png" alt="">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, necessitatibus!</h3> -->
-        <!-- <div class="price">$15.99 <span>20.99</span></div>
-        <a href="#" class="btn">add to cart</a> -->
-      <!-- </div>
-      <div class="box">
-        <img src="img/img-6.png" alt="">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, necessitatibus!</h3> -->
-        <!-- <div class="price">$15.99 <span>20.99</span></div>
-        <a href="#" class="btn">add to cart</a> -->
-      <!-- </div>
-    </div>
-  </section> -->
-  <!-- end gallery section -->
-
-
-
-
-
 
 
 
@@ -187,7 +142,10 @@
       <button class="carousel-button next" data-carousel-button="next">&#x2771;</button>
       <ul data-slides>
         <li class="slide" data-active>
-          <img src="img/img-1.png" alt="Nature Image #1">
+          <img src="img/product-2.png" alt="Nature Image #1">
+        </li>
+        <li class="slide">
+          <img src="img/img-1.png" alt="Nature Image #2">
         </li>
         <li class="slide">
           <img src="img/img-2.png" alt="Nature Image #2">
@@ -222,7 +180,12 @@
 
   <!-- start events section -->
   <section class="events" id="events">
+    <div class="spacer"></div>
     <h1 class="heading">upcoming <span>events</span> </h1>
+    <h1 class="heading-1">check back <span>soon!</span></h1>
+    <div class="spacer"></div>
+
+
     <div class="box-container">
       <div class="box">
         <div class="icons">
@@ -285,295 +248,26 @@
   </section>
   <!-- end events section -->
 
-
+  <div class="spacer"></div>
 
 
   <!-- start contact section -->
   <section class="contact" id="contact">
     <h1 class="heading">contact<span> me</span></h1>
     <div class="row">
-      <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44738.37087248149!2d-122.6796365805541!3d45.50709563461227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b0b7da97427%3A0x1c36b9e6f6d18591!2sPortland%2C%20OR!5e0!3m2!1sen!2sus!4v1664418079148!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
 
 
 
-    <!-- start experiment with google maps api -->
+    <!-- start google maps api -->
     <div id="map"></div>
-    <script>
-      function initMap()  {
-
-      const mapTypeStylesArray = [
-    {
-      "featureType": "all",
-      "elementType": "labels.text",
-      "stylers": [
-        {
-          "hue": "#ff0000"
-        }
-      ]
-    },
-    {
-      "featureType": "all",
-      "elementType": "labels.text.fill",
-      "stylers": [
-        {
-          "saturation": 36
-        },
-        {
-          "color": "#959595"
-        },
-        {
-          "lightness": 40
-        }
-      ]
-    },
-    {
-      "featureType": "all",
-      "elementType": "labels.text.stroke",
-      "stylers": [
-        {
-          "visibility": "on"
-        },
-        {
-          "color": "#000000"
-        },
-        {
-          "lightness": 16
-        }
-      ]
-    },
-    {
-      "featureType": "all",
-      "elementType": "labels.icon",
-      "stylers": [
-        {
-          "visibility": "off"
-        }
-      ]
-    },
-    {
-      "featureType": "administrative",
-      "elementType": "geometry.fill",
-      "stylers": [
-        {
-          "color": "#000000"
-        },
-        {
-          "lightness": 20
-        }
-      ]
-    },
-    {
-      "featureType": "administrative",
-      "elementType": "geometry.stroke",
-      "stylers": [
-        {
-          "color": "#000000"
-        },
-        {
-          "lightness": 17
-        },
-        {
-          "weight": 1.2
-        }
-      ]
-    },
-    {
-      "featureType": "landscape",
-      "elementType": "geometry",
-      "stylers": [
-        {
-          "color": "#000000"
-        },
-        {
-          "lightness": 20
-        }
-      ]
-    },
-    {
-      "featureType": "poi",
-      "elementType": "geometry",
-      "stylers": [
-        {
-          "color": "#000000"
-        },
-        {
-          "lightness": 21
-        }
-      ]
-    },
-    {
-      "featureType": "road.highway",
-      "elementType": "geometry.fill",
-      "stylers": [
-        {
-          "color": "#793a29"
-        },
-        {
-          "lightness": 17
-        }
-      ]
-    },
-    {
-      "featureType": "road.highway",
-      "elementType": "geometry.stroke",
-      "stylers": [
-        {
-          "lightness": 29
-        },
-        {
-          "weight": 0.2
-        },
-        {
-          "visibility": "off"
-        }
-      ]
-    },
-    {
-      "featureType": "road.arterial",
-      "elementType": "geometry",
-      "stylers": [
-        {
-          "color": "#000000"
-        },
-        {
-          "lightness": 18
-        }
-      ]
-    },
-    {
-      "featureType": "road.arterial",
-      "elementType": "geometry.fill",
-      "stylers": [
-        {
-          "color": "#6a6a6a"
-        }
-      ]
-    },
-    {
-      "featureType": "road.local",
-      "elementType": "geometry",
-      "stylers": [
-        {
-          "color": "#000000"
-        },
-        {
-          "lightness": 16
-        }
-      ]
-    },
-    {
-      "featureType": "transit",
-      "elementType": "geometry",
-      "stylers": [
-        {
-          "color": "#362723"
-        },
-        {
-          "lightness": 19
-        }
-      ]
-    },
-    {
-      "featureType": "water",
-      "elementType": "geometry",
-      "stylers": [
-        {
-          "color": "#000000"
-        },
-        {
-          "lightness": 8
-        }
-      ]
-    }
-  ]
-
-
-        let mapOptions = {
-          center: { lat: 45.523064, lng: -122.676483 },
-          zoom: 12,
-          styles: mapTypeStylesArray,
-          // zoom: 16,
-          // mapTypeId: 'terrain',
-          // mapTypeId: 'satellite',
-          mapTypeControlOptions: {
-            mapTypeIds: ['roadmap', 'hybrid']
-          }
-        }
-
-        let map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
-        let marker = new google.maps.Marker({
-          position: { lat: 45.5084, lng: -122.6660 },
-          map: map,
-        });
-
-        let marker2 = new google.maps.Marker({
-          position: { lat: 45.5593, lng: -122.6552 },
-          map: map,
-        });
-
-        let marker3 = new google.maps.Marker({
-          position: { lat: 45.5193, lng: -122.6023 },
-          map: map,
-        });
-
-        let marker4 = new google.maps.Marker({
-          position: { lat: 45.5118, lng: -122.6231 },
-          map: map,
-        });
-
-        let marker5 = new google.maps.Marker({
-          position: { lat: 45.5525, lng: -122.6807 },
-          map: map,
-        });
-
-        const infoWindowOptions = {
-          position: { lat: 45.523064, lng: -122.676483 },
-          maxWidth: 200
-        }
-
-        const infoWindow = new google.maps.InfoWindow(infoWindowOptions)
-
-        infoWindow.setContent('meet me!')
-
-        const infoWindowOpenOptions = {
-          map: map,
-          anchor: marker,
-          shouldFocus: false
-        }
-
-        infoWindow.open(infoWindowOpenOptions);
-        setTimeout(() => {
-          infoWindowOpenOptions.anchor = marker2;
-          infoWindow.open(infoWindowOpenOptions);
-        }, 3000)
-        setTimeout(() => {
-          infoWindowOpenOptions.anchor = marker3;
-          infoWindow.open(infoWindowOpenOptions);
-        }, 6000)
-        setTimeout(() => {
-          infoWindowOpenOptions.anchor = marker4;
-          infoWindow.open(infoWindowOpenOptions);
-        }, 9000)
-        setTimeout(() => {
-          infoWindowOpenOptions.anchor = marker5;
-          infoWindow.open(infoWindowOpenOptions);
-        }, 12000)
-
-        map.setTilt(45)
-      }
-
-    </script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
-    <!-- end experiment with google maps api -->
+      <script defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+      <script src="/script.js"></script>
+    <!-- end google maps api -->
 
 
 
 
-
-
-
+    <!-- start contact form -->
       <form target="_blank" action="https://formsubmit.co/8bb04e0ed6d1daa99afe997e85a8e483"
         method="POST"
         enctype="multipart/form-data"
@@ -600,6 +294,7 @@
 
         <input type="submit" value="contact now" class="btn" id="submit">
       </form>
+      <!-- end contact form -->
     </div>
   </section>
   <!-- end contact section -->
@@ -608,13 +303,13 @@
 
 
 
-
+  <div class="spacer"></div>
 
 
 
 
   <!-- start footer section -->
-  <section class="footer">
+  <section class="footer" id="footer">
 
     <div class="share">
       <a href="https://www.facebook.com" class="fab fa-facebook-f"></a>
@@ -625,11 +320,11 @@
     </div>
 
     <div class="links">
-      <a href="#">home</a>
-      <a href="#">about</a>
-      <a href="#">gallery</a>
-      <a href="#">events</a>
-      <a href="#">contact</a>
+      <a href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#gallery">gallery</a>
+      <a href="#events">events</a>
+      <a href="#contact">contact</a>
     </div>
 
   </section>
