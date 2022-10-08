@@ -522,26 +522,70 @@
         let map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
         let marker = new google.maps.Marker({
-          position: { lat: 45.523064, lng: -122.676483 },
+          position: { lat: 45.5084, lng: -122.6660 },
           map: map,
-        })
+        });
+
+        let marker2 = new google.maps.Marker({
+          position: { lat: 45.5593, lng: -122.6552 },
+          map: map,
+        });
+
+        let marker3 = new google.maps.Marker({
+          position: { lat: 45.5193, lng: -122.6023 },
+          map: map,
+        });
+
+        let marker4 = new google.maps.Marker({
+          position: { lat: 45.5118, lng: -122.6231 },
+          map: map,
+        });
+
+        let marker5 = new google.maps.Marker({
+          position: { lat: 45.5525, lng: -122.6807 },
+          map: map,
+        });
 
         const infoWindowOptions = {
-          content: 'Meet Me!',
-          position: { lat: 45.523064, lng: -122.676483 }
+          // content: 'Meet Me!',
+          position: { lat: 45.523064, lng: -122.676483 },
+          maxWidth: 200
         }
 
 
         const infoWindow = new google.maps.InfoWindow(infoWindowOptions)
 
+        infoWindow.setContent('meet me!')
+
         const infoWindowOpenOptions = {
           map: map,
-          anchor: marker
+          anchor: marker,
+          shouldFocus: false
         }
 
         infoWindow.open(infoWindowOpenOptions);
 
-        // map.setTilt(45)
+        setTimeout(() => {
+          infoWindowOpenOptions.anchor = marker2;
+          infoWindow.open(infoWindowOpenOptions);
+        }, 3000)
+
+        setTimeout(() => {
+          infoWindowOpenOptions.anchor = marker3;
+          infoWindow.open(infoWindowOpenOptions);
+        }, 6000)
+
+        setTimeout(() => {
+          infoWindowOpenOptions.anchor = marker4;
+          infoWindow.open(infoWindowOpenOptions);
+        }, 9000)
+
+        setTimeout(() => {
+          infoWindowOpenOptions.anchor = marker5;
+          infoWindow.open(infoWindowOpenOptions);
+        }, 12000)
+
+        map.setTilt(45)
       }
 
     </script>
