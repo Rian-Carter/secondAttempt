@@ -48,7 +48,9 @@ section{
 
 
 
-
+.spacer {
+  padding-bottom: 25rem;
+}
 
 
 
@@ -63,7 +65,19 @@ section{
 
 .heading span{
   color: var(--main-color);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+}
+
+.heading-1 {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 3.5rem;
+  font-size: 10rem;
+  background-color: var(--black);
+}
+
+.heading-1 span {
+  color: var(--main-color);
 }
 /* end about me heading section */
 
@@ -362,7 +376,7 @@ form h3 span {
 
 .home .content h3{
   font-size: 6rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #fff;
   /* background: var(--black); */
 }
@@ -420,8 +434,9 @@ form h3 span {
 }
 
 .about .row .content h3{
-  font-size: 3rem;
+  font-size: 8rem;
   color: #fff;
+  background: var(--bg);
   /* text-align: center; */
 }
 
@@ -430,6 +445,7 @@ form h3 span {
   color: #ccc;
   padding: 1rem 0;
   line-height: 1.8;
+  background: var(--bg);
 }
 /* end about me section */
 
