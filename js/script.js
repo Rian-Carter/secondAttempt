@@ -1,3 +1,51 @@
+// start scroll up/down button
+$(document).ready(function(){
+  $(window).scroll(function(){
+    // sticky navbar on scroll script
+      if(this.scrollY > 20){
+          $('.navbar').addClass("sticky");
+      }else{
+          $('.navbar').removeClass("sticky");
+      }
+    //scroll-down button show/hide script
+      if(this.scrollY < 500){
+          $('.scroll-down-btn').addClass("show");
+      }else{
+          $('.scroll-down-btn').removeClass("show");
+      }
+    // scroll-up button show/hide script
+      if(this.scrollY > 500){
+          $('.scroll-up-btn').addClass("show");
+      }else{
+          $('.scroll-up-btn').removeClass("show");
+      }
+  });
+    // slide-up script
+  $('.scroll-up-btn').click(function(){
+      $('html').animate({scrollTop: 0});
+      // removing smooth scroll on slide-up button click
+      $('html').css("scrollBehavior", "auto");
+  });
+    // slide-down script
+  $('.scroll-down-btn').click(function(){
+    $('html').animate({scrollTop: 975});
+    // removing smooth scroll on slide-up button click
+    $('html').css("scrollBehavior", "auto");
+});
+  $('.navbar .menu li a').click(function(){
+    // applying again smooth scroll on menu items click
+      $('html').css("scrollBehavior", "smooth");
+  });
+  // toggle menu/navbar script
+  $('.menu-btn').click(function(){
+      $('.navbar .menu').toggleClass("active");
+      $('.menu-btn i').toggleClass("active");
+  });
+});
+// end scroll up/down button
+
+
+
 
 
 let navbar = document.querySelector('.navbar');
@@ -31,6 +79,9 @@ window.onscroll = () =>{
 }
 
 
+
+
+
 // image carousel
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
@@ -51,6 +102,9 @@ buttons.forEach(button => {
   })
 })
 // end image carousel
+
+
+
 
 
 // start clear contact form
@@ -264,6 +318,8 @@ function initMap()  {
 // end map styling
 
 
+
+
 // start map options
   let mapOptions = {
   center: { lat: 45.523064, lng: -122.676483 },
@@ -279,9 +335,13 @@ function initMap()  {
   // end map options
 
 
+
+
   // new map
   let map = new google.maps.Map(document.getElementById("map"), mapOptions);
   // end new map
+
+
 
 
   // start markers
@@ -312,6 +372,9 @@ function initMap()  {
   // end markers
 
 
+
+
+
   // start info window
   const infoWindowOptions = {
   position: { lat: 45.523064, lng: -122.676483 },
@@ -330,20 +393,20 @@ function initMap()  {
 
   infoWindow.open(infoWindowOpenOptions);
   setTimeout(() => {
-  infoWindowOpenOptions.anchor = marker2;
-  infoWindow.open(infoWindowOpenOptions);
+    infoWindowOpenOptions.anchor = marker2;
+    infoWindow.open(infoWindowOpenOptions);
   }, 3000)
   setTimeout(() => {
-  infoWindowOpenOptions.anchor = marker3;
-  infoWindow.open(infoWindowOpenOptions);
+    infoWindowOpenOptions.anchor = marker3;
+    infoWindow.open(infoWindowOpenOptions);
   }, 6000)
   setTimeout(() => {
-  infoWindowOpenOptions.anchor = marker4;
-  infoWindow.open(infoWindowOpenOptions);
+    infoWindowOpenOptions.anchor = marker4;
+    infoWindow.open(infoWindowOpenOptions);
   }, 9000)
   setTimeout(() => {
-  infoWindowOpenOptions.anchor = marker5;
-  infoWindow.open(infoWindowOpenOptions);
+    infoWindowOpenOptions.anchor = marker5;
+    infoWindow.open(infoWindowOpenOptions);
   }, 12000)
 
   map.setTilt(45)
