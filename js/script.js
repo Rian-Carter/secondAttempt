@@ -1,3 +1,5 @@
+
+
 let navbar = document.querySelector('.navbar');
 
 document.querySelector('#menu-btn').onclick = () =>{
@@ -43,9 +45,41 @@ buttons.forEach(button => {
     let newIndex = [...slides.children].indexOf(activeSlide) + offset
     if (newIndex < 0) newIndex = slides.children.length - 1
     if (newIndex >= slides.children.length) newIndex = 0
-
+    
     slides.children[newIndex].dataset.active = true
     delete activeSlide.dataset.active
   })
 })
 // end image carousel
+
+
+// start clear contact form
+
+// let btnClear = document.querySelector('btn');
+// let inputs = document.querySelectorAll('input');
+
+// btnClear.addEventListener('click', () => {
+//   inputs.forEach(input => input.value = '');
+// });
+
+
+const btn = document.getElementById("contact");
+
+btn.addEventListener('submit', function handleSubmit(event) {
+  event.preventDefault();
+
+  const inputs = document.querySelectorAll('#name, #email, #message')
+
+  inputs.forEach(input => {
+    input.value = '';
+  });
+});
+// end clear contact form
+
+
+
+
+
+// start google API section
+  
+// end google API section
