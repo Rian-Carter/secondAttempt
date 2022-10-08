@@ -19,7 +19,6 @@
     #map {
       height: 50vh;
       width: 50vw;
-      /* background-color: red; */
     }
   </style>
 
@@ -146,7 +145,7 @@
 
 
   <!-- start gallery section -->
-  <!-- <section class="gallery" id="gallery"> -->
+  <section class="gallery" id="gallery">
     <h1 class="heading">my <span>work</span></h1>
     <!-- <div class="box-container">
       <div class="box">
@@ -321,17 +320,229 @@
 
       function initMap()  {
 
+        const mapTypeStylesArray = [
+    {
+        "featureType": "all",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "hue": "#ff0000"
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "saturation": 36
+            },
+            {
+                "color": "#959595"
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#793a29"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            },
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 18
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#6a6a6a"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#362723"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 8
+            }
+        ]
+    }
+]
+
+
         let mapOptions = {
-          center: new google.maps.LatLng('45.523064', '	-122.676483'),
-          zoom: 12
+          center: { lat: 45.523064, lng: -122.676483 },
+          zoom: 12,
+          styles: mapTypeStylesArray,
+          // zoom: 16,
+          // mapTypeId: 'terrain',
+          // mapTypeId: 'satellite',
+          mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'hybrid']
+          }
         }
 
         let map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+
+        const infoWindowOptions = {
+          content: 'Meet Me!',
+          position: { lat: 45.523064, lng: -122.676483 }
+        }
+
+
+        const infoWindow = new google.maps.InfoWindow(infoWindowOptions)
+
+        const infoWindowOpenOptions = {
+          map: map
+          anchor: 
+        }
+
+        infoWindow.open(infoWindowOpenOptions);
+
+        // map.setTilt(45)
       }
 
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5BPriyVAAaaeubxwLnbrEvL1kE4r7Kdo&callback=initMap"></script>
     <!-- end experiment with google maps api -->
 
 
