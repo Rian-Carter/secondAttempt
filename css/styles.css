@@ -776,3 +776,28 @@ form h3 span {
   width: 50vw;
 }
 /* end map styling */
+
+
+
+/* skip link */
+:not(.skip-link):focus {
+  outline: 2px solid #fff;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: var(--main-color);
+  color: white;
+  padding: .5rem;
+  translate: 0 -100%;
+  transition: translate 150ms ease-in-out;
+}
+
+.skip-link:focus {
+  translate: 0;
+}
+/* end skip link */
