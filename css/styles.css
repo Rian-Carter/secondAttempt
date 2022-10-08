@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;500;600&family=Ubuntu:wght@500;700&display=swap');
 
 
-:root{
+:root {
   --main-color:#d3ad7f;
   --black:#12121a;
   --bg:#010103;
   --border:.1rem solid rgba(225,225,225,.3)
 }
 
-*{
+* {
   font-family: 'Permanent Marker', cursive;
   margin:0; padding:0;
   box-sizing: border-box;
@@ -18,31 +18,31 @@
   transition: .2s linear;
 }
 
-html{
+html  {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
   width: .8rem;
 }
 
-html::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track {
   background: transparent;
 }
 
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: .5rem;
 }
 
-body{
+body {
   background-color: var(--bg);
 }
 
-section{
+section {
   padding: 2rem 7%;
 }
 
@@ -55,17 +55,15 @@ section{
 
 
 /* start about me heading section */
-.heading{
+.heading  {
   text-align: center;
   color: #fff;
-  /* text-transform: uppercase; */
   padding-bottom: 3.5rem;
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
-.heading span{
+.heading span {
   color: var(--main-color);
-  /* text-transform: uppercase; */
 }
 
 .heading-1 {
@@ -108,7 +106,7 @@ form h3 span {
 
 
 /* start header section */
-.btn{
+.btn {
   margin-top: 1rem;
   display: inline-block;
   padding: .9rem 3rem;
@@ -119,13 +117,13 @@ form h3 span {
   transition: 1s;
 }
 
-.btn:hover{
+.btn:hover {
   letter-spacing: .3rem;
   transform: rotate(-13deg);
   transition: 1s;
 }
 
-.header{
+.header {
   background: var(--bg);
   display: flex;
   align-items: center;
@@ -137,35 +135,35 @@ form h3 span {
   z-index: 1000;
 }
 
-.header .logo p{
+.header .logo p {
   height: 6rem;
   font-size: 3.6rem;
   color:var(--main-color);
   transition: 1s;
 }
 
-.header .logo span{
+.header .logo span {
   color: #fff;
 }
 
-.header .logo p:hover{
+.header .logo p:hover {
   transform: rotate(-13deg);
   transition: 1s;
 }
 
-.header .navbar a{
+.header .navbar a {
   margin: 0 1rem;
   font-size: 1.6rem;
   color: #fff;
 }
 
-.header .navbar a:hover{
+.header .navbar a:hover {
   color: var(--main-color);
   border-bottom: .1rem solid var(--main-color);
   padding-bottom: .5rem;
 }
 
-.header .icons div{
+.header .icons div {
   color:#fff;
   cursor: pointer;
   font-size: 2.5rem;
@@ -176,7 +174,7 @@ form h3 span {
   color:var(--main-color)
 }
 
-#menu-btn{
+#menu-btn {
   display: none;
 }
 /* end header section */
@@ -190,7 +188,7 @@ form h3 span {
 
 
 /* search bar start */
-.header .search-form{
+.header .search-form {
   position: absolute;
   top: 115%; right: 7%;
   background: #fff;
@@ -202,11 +200,11 @@ form h3 span {
   transform-origin: top;
 }
 
-.header .search-form.active{
+.header .search-form.active {
   transform: scaleY(1);
 }
 
-.header .search-form input{
+.header .search-form input {
   height: 100%;
   width: 100%;
   font-size: 1.6rem;
@@ -215,14 +213,14 @@ form h3 span {
   text-transform: none;
 }
 
-.header .search-form label{
+.header .search-form label {
   cursor: pointer;
   font-size: 2.2rem;
   margin-right: 1.5rem;
   color: var(--black);
 }
 
-.header .search-form label:hover{
+.header .search-form label:hover {
   color: var(--main-color);
 }
 /* search bar end */
@@ -242,8 +240,9 @@ form h3 span {
   top: 100%; right: -100%;
   height: calc(100vh - 9.5rem);
   width: 35rem;
-  background: #fff;
+  background: var(--black);
   padding: 0 1.5rem;
+  color: #fff;
 }
 
 .header .cart-items-container.active{
@@ -255,7 +254,7 @@ form h3 span {
   margin: 2rem 0;
   display: flex;
   align-items: center;
-  gap:1.5rem
+  gap:  1.5rem
 }
 
 .header .cart-items-container .cart-item .fa-times{
@@ -263,7 +262,7 @@ form h3 span {
   top:1rem; right: 1rem;
   font-size: 2rem;
   cursor: pointer;
-  color: var(--black);
+  color: #fff;
 }
 
 .header .cart-items-container .cart-item .fa-times:hover{
@@ -276,7 +275,7 @@ form h3 span {
 
 .header .cart-items-container .cart-item h3{
   font-size: 2rem;
-  color: var(--black);
+  color: #fff;
   padding-bottom: .5rem;
 }
 
@@ -304,7 +303,7 @@ form h3 span {
 
 
 /* media queries */
-@media (max-width:991px){
+@media (max-width:61.938rem){
   html{
     font-size: 55%;
   }
@@ -318,7 +317,7 @@ form h3 span {
   } 
 }
 
-@media (max-width:768px){
+@media (max-width:48rem){
   #menu-btn{
     display: inline-block;
   }
@@ -336,7 +335,8 @@ form h3 span {
   }
 
   .header .navbar a{
-    color:var(--black);
+    color: var(--main-color);
+    background: var(--black);
     display: block;
     margin: 1.5rem;
     padding: .5rem;
@@ -363,7 +363,7 @@ form h3 span {
   }
 }
 
-@media (max-width:450px){
+@media (max-width:28.125rem){
   html{
     font-size: 50%;
   }
@@ -397,7 +397,11 @@ form h3 span {
   font-size: 6rem;
   /* text-transform: uppercase; */
   color: #fff;
-  /* background: var(--black); */
+  background: var(--black);
+  /* opacity: 0.5; */
+  border-radius: 50px;
+  width: 36rem;
+  align-items: center;
 }
 
 .home .content p{
@@ -694,7 +698,8 @@ form h3 span {
 /* start carousel section */
 .carousel {
   margin: auto;
-  padding: 10px;
+  /* padding: 10px; */
+  padding: .625rem;
   width:50vw;
   height: 50vh;
   position: relative;
@@ -753,7 +758,7 @@ form h3 span {
 }
 
 .carousel-button:focus {
-  outline: 1px var(--main-color);
+  outline: 0.063rem var(--main-color);
 }
 
 .carousel-button.prev {
@@ -781,7 +786,7 @@ form h3 span {
 
 /* skip link */
 :not(.skip-link):focus {
-  outline: 2px solid #fff;
+  outline: 0.125rem solid #fff;
 }
 
 .skip-link {
@@ -801,3 +806,63 @@ form h3 span {
   translate: 0;
 }
 /* end skip link */
+
+
+
+/* start scroll up/down button */
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: var(--main-color);
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  /* transition: all 0.3s ease-in; */
+}
+.scroll-up-btn.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.scroll-up-btn:hover {
+  filter: brightness(90%);
+}
+
+.scroll-down-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: var(--main-color);
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  /* transition: all 0.3s ease-in; */
+}
+.scroll-down-btn.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.scroll-down-btn:hover {
+  filter: brightness(90%);
+}
+/* end scroll up/down button */
