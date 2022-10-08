@@ -303,8 +303,6 @@
 
 
 
-
-
   <!-- start contact section -->
   <section class="contact" id="contact">
     <h1 class="heading">contact<span> me</span></h1>
@@ -314,197 +312,195 @@
 
 
     <!-- start experiment with google maps api -->
-      <div id="map"></div>
-
+    <div id="map"></div>
     <script>
-
       function initMap()  {
 
-        const mapTypeStylesArray = [
+      const mapTypeStylesArray = [
     {
-        "featureType": "all",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "hue": "#ff0000"
-            }
-        ]
+      "featureType": "all",
+      "elementType": "labels.text",
+      "stylers": [
+        {
+          "hue": "#ff0000"
+        }
+      ]
     },
     {
-        "featureType": "all",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "saturation": 36
-            },
-            {
-                "color": "#959595"
-            },
-            {
-                "lightness": 40
-            }
-        ]
+      "featureType": "all",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "saturation": 36
+        },
+        {
+          "color": "#959595"
+        },
+        {
+          "lightness": 40
+        }
+      ]
     },
     {
-        "featureType": "all",
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 16
-            }
-        ]
+      "featureType": "all",
+      "elementType": "labels.text.stroke",
+      "stylers": [
+        {
+          "visibility": "on"
+        },
+        {
+          "color": "#000000"
+        },
+        {
+          "lightness": 16
+        }
+      ]
     },
     {
-        "featureType": "all",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
+      "featureType": "all",
+      "elementType": "labels.icon",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
     },
     {
-        "featureType": "administrative",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 20
-            }
-        ]
+      "featureType": "administrative",
+      "elementType": "geometry.fill",
+      "stylers": [
+        {
+          "color": "#000000"
+        },
+        {
+          "lightness": 20
+        }
+      ]
     },
     {
-        "featureType": "administrative",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 17
-            },
-            {
-                "weight": 1.2
-            }
-        ]
+      "featureType": "administrative",
+      "elementType": "geometry.stroke",
+      "stylers": [
+        {
+          "color": "#000000"
+        },
+        {
+          "lightness": 17
+        },
+        {
+          "weight": 1.2
+        }
+      ]
     },
     {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 20
-            }
-        ]
+      "featureType": "landscape",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#000000"
+        },
+        {
+          "lightness": 20
+        }
+      ]
     },
     {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 21
-            }
-        ]
+      "featureType": "poi",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#000000"
+        },
+        {
+          "lightness": 21
+        }
+      ]
     },
     {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#793a29"
-            },
-            {
-                "lightness": 17
-            }
-        ]
+      "featureType": "road.highway",
+      "elementType": "geometry.fill",
+      "stylers": [
+        {
+          "color": "#793a29"
+        },
+        {
+          "lightness": 17
+        }
+      ]
     },
     {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "lightness": 29
-            },
-            {
-                "weight": 0.2
-            },
-            {
-                "visibility": "off"
-            }
-        ]
+      "featureType": "road.highway",
+      "elementType": "geometry.stroke",
+      "stylers": [
+        {
+          "lightness": 29
+        },
+        {
+          "weight": 0.2
+        },
+        {
+          "visibility": "off"
+        }
+      ]
     },
     {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 18
-            }
-        ]
+      "featureType": "road.arterial",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#000000"
+        },
+        {
+          "lightness": 18
+        }
+      ]
     },
     {
-        "featureType": "road.arterial",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#6a6a6a"
-            }
-        ]
+      "featureType": "road.arterial",
+      "elementType": "geometry.fill",
+      "stylers": [
+        {
+          "color": "#6a6a6a"
+        }
+      ]
     },
     {
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 16
-            }
-        ]
+      "featureType": "road.local",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#000000"
+        },
+        {
+          "lightness": 16
+        }
+      ]
     },
     {
-        "featureType": "transit",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#362723"
-            },
-            {
-                "lightness": 19
-            }
-        ]
+      "featureType": "transit",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#362723"
+        },
+        {
+          "lightness": 19
+        }
+      ]
     },
     {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 8
-            }
-        ]
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [
+        {
+          "color": "#000000"
+        },
+        {
+          "lightness": 8
+        }
+      ]
     }
-]
+  ]
 
 
         let mapOptions = {
@@ -547,11 +543,9 @@
         });
 
         const infoWindowOptions = {
-          // content: 'Meet Me!',
           position: { lat: 45.523064, lng: -122.676483 },
           maxWidth: 200
         }
-
 
         const infoWindow = new google.maps.InfoWindow(infoWindowOptions)
 
@@ -564,22 +558,18 @@
         }
 
         infoWindow.open(infoWindowOpenOptions);
-
         setTimeout(() => {
           infoWindowOpenOptions.anchor = marker2;
           infoWindow.open(infoWindowOpenOptions);
         }, 3000)
-
         setTimeout(() => {
           infoWindowOpenOptions.anchor = marker3;
           infoWindow.open(infoWindowOpenOptions);
         }, 6000)
-
         setTimeout(() => {
           infoWindowOpenOptions.anchor = marker4;
           infoWindow.open(infoWindowOpenOptions);
         }, 9000)
-
         setTimeout(() => {
           infoWindowOpenOptions.anchor = marker5;
           infoWindow.open(infoWindowOpenOptions);
