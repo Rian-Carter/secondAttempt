@@ -4,29 +4,29 @@ let navbar = document.querySelector('.navbar');
 
 document.querySelector('#menu-btn').onclick = () =>{
   navbar.classList.toggle('active');
-  searchForm.classList.remove('active');
+  // searchForm.classList.remove('active');
   cartItem.classList.remove('active');
 }
 
-let searchForm = document.querySelector('.search-form');
+// let searchForm = document.querySelector('.search-form');
 
-document.querySelector('#search-btn').onclick = () =>{
-  searchForm.classList.toggle('active');
-  navbar.classList.remove('active');
-  cartItem.classList.remove('active');
-}
+// document.querySelector('#search-btn').onclick = () =>{
+//   searchForm.classList.toggle('active');
+//   navbar.classList.remove('active');
+//   cartItem.classList.remove('active');
+// }
 
 let cartItem = document.querySelector('.cart-items-container');
 
 document.querySelector('#cart-btn').onclick = () =>{
   cartItem.classList.toggle('active');
   navbar.classList.remove('active');
-  searchForm.classList.remove('active');
+  // searchForm.classList.remove('active');
 }
 
 window.onscroll = () =>{
   navbar.classList.remove('active');
-  searchForm.classList.remove('active');
+  // searchForm.classList.remove('active');
   cartItem.classList.remove('active');
 }
 
@@ -54,17 +54,17 @@ buttons.forEach(button => {
 
 
 // start clear contact form
-const btn = document.getElementById("contact");
+// const btn = document.getElementById("contact");
 
-btn.addEventListener('submit', function handleSubmit(event) {
-  event.preventDefault();
+// btn.addEventListener('submit', function handleSubmit(event) {
+//   event.preventDefault();
 
-  const inputs = document.querySelectorAll('#name, #email, #message')
+//   const inputs = document.querySelectorAll('#name, #email, #message')
 
-  inputs.forEach(input => {
-    input.value = '';
-  });
-});
+//   inputs.forEach(input => {
+//     input.value = '';
+//   });
+// });
 // end clear contact form
 
 
