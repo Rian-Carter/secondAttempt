@@ -54,15 +54,6 @@ buttons.forEach(button => {
 
 
 // start clear contact form
-
-// let btnClear = document.querySelector('btn');
-// let inputs = document.querySelectorAll('input');
-
-// btnClear.addEventListener('click', () => {
-//   inputs.forEach(input => input.value = '');
-// });
-
-
 const btn = document.getElementById("contact");
 
 btn.addEventListener('submit', function handleSubmit(event) {
