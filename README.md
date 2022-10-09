@@ -14,9 +14,9 @@
 * _A portfolio for a local Portland based artist that features artwork, events, locations of galleries, collaborations, and more_
 ---
 ## Setup/Installation
-* _Go to https://github.com/Rian-Carter/yeahrightokay.git_
+* _Go to https://github.com/Rian-Carter/secondAttempt.git_
 * _Clone this repository to your local machine by running the following command_
-* `$ git clone https://github.com/Rian-Carter/yeahrightokay.git`
+* `$ git clone https://github.com/Rian-Carter/secondAttempt.git`
 * _Open repository in a text editor such as Visual Studio Code_
 * _View using live server or visit link at top of README_
 ---
