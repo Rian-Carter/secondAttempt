@@ -18,6 +18,7 @@
 * _Clone this repository to your local machine by running the following command_
 * `$ git clone https://github.com/Rian-Carter/secondAttempt.git`
 * _Open repository in a text editor such as Visual Studio Code_
+* _Go to https://developers.google.com/maps to obtain an API key. You will need to directly   paste your API key into the url on line 290_
 * _View using live server or visit link at top of README_
 ---
 ## Live Website can be viewed at
