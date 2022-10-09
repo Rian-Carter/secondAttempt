@@ -45,4 +45,7 @@
 #### ---Saturday October 8th---
 * _10:00am to 4:15pm updated .gitignore, moved google api script out of index.html, styling, indentation, spacing, fixed footer links, removed original google map, added animation to "check back soon", added in skip links for ADA compliance and styled skip links. Added in auto scroll up/down button primarily for mobile. Added a purchase section. Linked jQuery to project. Deployed project to GH Pages, etc..._ | _6hrs 15mins_
 
+#### ---Sunday October 9th---
+* _9:00am to ??? working on hiding API KEY_ | _0hrs 0hrs_
+
 * _Total Time = 40hrs 11mins_
